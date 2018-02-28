@@ -20,5 +20,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/',admin.site.urls),
     url(r'^blog/',include('blog.urls',namespace='blog')),
+    url(r'^account/',include('account.urls', namespace='account')),
 #    path('admin/', admin.site.urls),
 ]
