@@ -6,7 +6,7 @@
     <h1>Login</h1>
     <p>Input your usernamen and password</p>
     <form class="form-horizontal" action="{% url 'account:user_login' %}" method="post">{% csrf_token %}
-        <!-- {{ form.as_p }}-->
+        <!-- {{ form.as_p }} -->
         <div class="form-group">
             <label for="{{ form.username.id_for_laber }}" class="col-md-5 control-label" style="color:red"><span class="glyphicon glyphicon-user"></span>Username</label>
                 <div class="col-md-6 text-left">{{ form.username }}</div>
@@ -15,7 +15,7 @@
             <label for="{{ form.password.id_for_laber }}" class="col-md-5 control-laber" style="color:blue"><span class="glyphicon glyphicor-floppy-open"></span>Password</label>
                 <div class="col-md-6 text-left">{{ form.password }}</div>
         </div>
-        <input tyle="submit" class="btn btn-primary btn-lg" value="Login">
+        <input type="submit" value="Login">
     </form>
 </div>
 {% endblock %}
