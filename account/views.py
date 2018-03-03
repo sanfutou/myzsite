@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 #from .forms import LoginForm
 from .forms import  RegistrationForm
+#文件存在问题，不能进入127.0.0.1:8000/account/register
 
 def register(request):
     if request.method =="POST":
